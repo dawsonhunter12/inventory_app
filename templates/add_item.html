@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Add New Item</h2>
+
+<form method="post">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        {{ form.part_name.label(class="form-label") }}
+        {{ form.part_name(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.description.label(class="form-label") }}
+        {{ form.description(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.origin_partnumber.label(class="form-label") }}
+        {{ form.origin_partnumber(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.mcmaster_carr_partnumber.label(class="form-label") }}
+        {{ form.mcmaster_carr_partnumber(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.cost.label(class="form-label") }}
+        {{ form.cost(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.quantity.label(class="form-label") }}
+        {{ form.quantity(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.min_on_hand.label(class="form-label") }}
+        {{ form.min_on_hand(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.location.label(class="form-label") }}
+        {{ form.location(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.manufacturer.label(class="form-label") }}
+        {{ form.manufacturer(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.notes.label(class="form-label") }}
+        {{ form.notes(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.submit(class="btn btn-primary") }}
+        <a href="{{ url_for('list_items') }}" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
+{% endblock %}

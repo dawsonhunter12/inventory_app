@@ -1,0 +1,87 @@
+2024-10-08 09:53:14,825 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:31]
+2024-10-08 09:53:14,830 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:46]
+2024-10-08 10:03:51,541 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:31]
+2024-10-08 10:03:51,546 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:46]
+2024-10-08 10:03:55,797 ERROR: Exception on / [GET] [in C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\dawso\Documents\inventory_app\app.py", line 111, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\dawso\Documents\inventory_app\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "c:\Users\dawso\Documents\inventory_app\templates\base.html", line 80, in top-level template code
+    <span class="text-muted">&copy; {{ now().year }} Inventory Control System</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dawso\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'now' is undefined
+2024-10-08 10:03:55,833 ERROR: 500 Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. [in c:\Users\dawso\Documents\inventory_app\app.py:60]
+2024-10-08 10:07:34,467 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 10:07:34,471 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 10:09:35,827 INFO: User admin logged out. [in c:\Users\dawso\Documents\inventory_app\app.py:89]
+2024-10-08 10:09:43,428 INFO: User admin logged in. [in c:\Users\dawso\Documents\inventory_app\app.py:79]
+2024-10-08 10:20:14,122 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 10:20:14,127 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 10:29:39,590 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 10:29:39,595 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 10:34:45,319 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 10:34:45,324 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 10:55:38,010 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 10:55:38,019 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 10:56:09,761 INFO: User admin logged in. [in c:\Users\dawso\Documents\inventory_app\app.py:79]
+2024-10-08 10:56:52,633 INFO: Item added by admin: 1 [in c:\Users\dawso\Documents\inventory_app\app.py:170]
+2024-10-08 10:57:24,776 INFO: Item deleted by admin: 1 [in c:\Users\dawso\Documents\inventory_app\app.py:200]
+2024-10-08 10:58:09,776 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 10:58:09,781 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 10:58:39,031 INFO: Item added by admin: 1 [in c:\Users\dawso\Documents\inventory_app\app.py:170]
+2024-10-08 10:58:47,811 INFO: Item updated by admin: 1 [in c:\Users\dawso\Documents\inventory_app\app.py:186]
+2024-10-08 10:58:52,685 INFO: Item deleted by admin: 1 [in c:\Users\dawso\Documents\inventory_app\app.py:200]
+2024-10-08 10:59:04,113 INFO: User admin logged out. [in c:\Users\dawso\Documents\inventory_app\app.py:89]
+2024-10-08 11:05:19,829 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 11:05:19,835 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 11:05:20,356 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 11:05:20,367 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 11:05:29,259 INFO: User admin logged in. [in c:\Users\dawso\Documents\inventory_app\app.py:79]
+2024-10-08 11:16:42,137 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 11:16:42,243 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 11:16:42,802 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 11:16:42,809 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 11:17:12,285 INFO: Item updated by admin: 12 [in c:\Users\dawso\Documents\inventory_app\app.py:186]
+2024-10-08 11:18:13,944 INFO: User admin logged out. [in c:\Users\dawso\Documents\inventory_app\app.py:89]
+2024-10-08 11:19:14,361 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 11:19:14,366 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 11:19:14,920 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 11:19:14,926 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 11:19:28,671 INFO: User admin logged in. [in c:\Users\dawso\Documents\inventory_app\app.py:79]
+2024-10-08 11:19:48,307 INFO: Item added by admin: 187 [in c:\Users\dawso\Documents\inventory_app\app.py:170]
+2024-10-08 11:21:11,322 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 11:21:11,328 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 11:21:11,815 INFO: Inventory Application Startup [in c:\Users\dawso\Documents\inventory_app\app.py:32]
+2024-10-08 11:21:11,822 INFO: Database tables created and admin user initialized. [in c:\Users\dawso\Documents\inventory_app\app.py:47]
+2024-10-08 11:21:25,775 INFO: Item deleted by admin: 187 [in c:\Users\dawso\Documents\inventory_app\app.py:200]

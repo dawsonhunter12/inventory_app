@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to the Inventory Control System</h1>
+    <p class="lead">Manage your inventory efficiently with our web application.</p>
+    <hr class="my-4">
+    <p>Use the navigation bar to access different functionalities.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('list_items') }}" role="button">Get Started</a>
+</div>
+{% endblock %}

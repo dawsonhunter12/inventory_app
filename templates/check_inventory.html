@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Items Below Minimum On-Hand Levels</h2>
+
+{% if items %}
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Part Number</th>
+                <th>Part Name</th>
+                <th>Quantity</th>
+                <th>Min on Hand</th>
+                <th>Origin Part Number</th>
+                <th>McMaster-Carr Part Number</th>
+                <th>Cost</th>
+                <th>Location</th>
+                <th>Manufacturer</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr class="{% if item.quantity == 0 %}table-danger{% endif %}">
+                <td>{{ item.part_number }}</td>
+                <td>{{ item.part_name }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.min_on_hand }}</td>
+                <td>{{ item.origin_partnumber }}</td>
+                <td>{{ item.mcmaster_carr_partnumber }}</td>
+                <td>{{ item.cost }}</td>
+                <td>{{ item.location }}</td>
+                <td>{{ item.manufacturer }}</td>
+                <td>{{ item.notes }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="alert alert-success" role="alert">
+    All items meet minimum on-hand levels.
+</div>
+{% endif %}
+{% endblock %}
